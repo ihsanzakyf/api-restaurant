@@ -37,8 +37,6 @@ Login dilakukan melalui endpoint berikut:
 ```bash
 POST /api/login
 
-
-
 // Customer
 {
 "email": "budi@mail.com",
@@ -89,7 +87,7 @@ Authorization: Bearer {token}
 
 🧪 Teknologi yang Digunakan
 
--   ⚙️ Laravel 10.x
+-   ⚙️ Laravel 12
 -   🛡️ Laravel Sanctum (API Authentication)
 -   🗃️ MySQL / MariaDB
 -   📮 Postman (Testing)
