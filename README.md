@@ -1,4 +1,4 @@
-# 🍽️ REST API – Food Ordering System
+# 🍽️ REST API – Restaurant
 
 Sistem RESTful API berbasis **Laravel** untuk pemesanan makanan, mendukung tiga peran pengguna utama:
 
