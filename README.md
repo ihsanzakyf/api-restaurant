@@ -34,25 +34,27 @@ Sistem RESTful API berbasis **Laravel** untuk pemesanan makanan, mendukung tiga 
 
 Login dilakukan melalui endpoint berikut:
 
-```http
+```bash
 POST /api/login
+
+
 
 // Customer
 {
-  "email": "budi@mail.com",
-  "password": "password"
+"email": "budi@mail.com",
+"password": "password"
 }
 
 // Administrator
 {
-  "email": "admin@mail.com",
-  "password": "password"
+"email": "admin@mail.com",
+"password": "password"
 }
 
 // Manager
 {
-  "email": "sari@mail.com",
-  "password": "password"
+"email": "sari@mail.com",
+"password": "password"
 }
 
 Authorization: Bearer {token}
@@ -72,24 +74,23 @@ Authorization: Bearer {token}
 | Aksi                   | Method | Endpoint                       | Deskripsi                             |
 | ---------------------- | ------ | ------------------------------ | ------------------------------------- |
 | 📦 Lihat pesanan masuk | GET    | `/api/manager/orders`          | Menampilkan pesanan masuk ke restoran |
-| ➕ Tambah item menu     | POST   | `/api/manager/menu-items`      | Menambahkan item menu baru            |
+| ➕ Tambah item menu    | POST   | `/api/manager/menu-items`      | Menambahkan item menu baru            |
 | ✏️ Perbarui item menu  | PUT    | `/api/manager/menu-items/{id}` | Memperbarui item menu berdasarkan ID  |
-| ❌ Hapus item menu      | DELETE | `/api/manager/menu-items/{id}` | Menghapus item menu                   |
+| ❌ Hapus item menu     | DELETE | `/api/manager/menu-items/{id}` | Menghapus item menu                   |
 
 👨‍💼 Administrator
 
 | Aksi                     | Method | Endpoint                              | Deskripsi                                      |
 | ------------------------ | ------ | ------------------------------------- | ---------------------------------------------- |
 | 📊 Lihat analitik sistem | GET    | `/api/admin/analytics`                | Ringkasan performa sistem                      |
-| ✅ Setujui restoran       | PUT    | `/api/admin/restaurants/{id}/approve` | Menyetujui pendaftaran restoran                |
-| ❌ Tolak restoran         | PUT    | `/api/admin/restaurants/{id}/reject`  | Menolak pendaftaran restoran                   |
+| ✅ Setujui restoran      | PUT    | `/api/admin/restaurants/{id}/approve` | Menyetujui pendaftaran restoran                |
+| ❌ Tolak restoran        | PUT    | `/api/admin/restaurants/{id}/reject`  | Menolak pendaftaran restoran                   |
 | 🧹 Hapus pengguna        | DELETE | `/api/admin/users/{id}`               | Menghapus akun user (admin, manager, customer) |
 
 🧪 Teknologi yang Digunakan
 
-- ⚙️ Laravel 10.x
-- 🛡️ Laravel Sanctum (API Authentication)
-- 🗃️ MySQL / MariaDB
-- 📮 Postman (Testing)
-
+-   ⚙️ Laravel 10.x
+-   🛡️ Laravel Sanctum (API Authentication)
+-   🗃️ MySQL / MariaDB
+-   📮 Postman (Testing)
 ```
